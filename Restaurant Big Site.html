@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <style>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 0.5rem 0;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1rem;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 2rem;
+        }
+        .section {
+            display: none;
+        }
+        .section.active {
+            display: block;
+        }
+    </style>
+</head>
+</style>
+</head>
+<body>
+    <!-- Menu toggle button -->
+    <button class="menu-btn" onclick="toggleMenu()">☰ Overview</button>
+
+    <!-- Sidebar menu -->
+    <div class="side-menu" id="sideMenu">
+       <!-- Main content -->
+    <div class="main-content" id="mainContent">
+       
+    </div>
+
+    <script>
+        // JavaScript function to toggle the menu
+        function toggleMenu() {
+            const sideMenu = document.getElementById('sideMenu');
+            const mainContent = document.getElementById('mainContent');
+            sideMenu.classList.toggle('active');
+            mainContent.classList.toggle('shifted');
+        }
+    </script>
+</body>
+</html>
+
+
+<body>
+    <header>
+        <h1>Restaurant</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a onclick="showSection('home')">Home</a></li>
+            <li><a onclick="showSection('foods')">Foods</a></li>
+            <li><a onclick="showSection('beverages')">Beverages</a></li>
+            <li><a onclick="showSection('desserts')">Desserts</a></li>
+            <li><a onclick="showSection('contact')">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="home" class="section active">
+            <h2>Home Page</h2>
+            <p>Welcome to our restaurant! Explore our delicious menu by navigating through the links above.</p>
+
+
+    </main>
+    </div>
+    <div id="foods" class="section">
+        <h2>Foods</h2>
+        <p>Explore our wide range of tasty dishes, including starters, main courses, and more!</p>
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Restaurant Menu</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                    padding: 20px;
+                    background-color: #ffffff;
+                }
+
+                .menu-container {
+                    max-width: 800px;
+                    margin: auto;
+                    background: #665555;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 6px rgb(253, 253, 253);
+                }
+
+                .menu-container h2 {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+
+                .menu-item {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid #ddd;
+                    padding-bottom: 10px;
+                }
+
+                .menu-item img {
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                    border-radius: 8px;
+                    margin-right: 20px;
+                }
+
+                .menu-item .details {
+                    flex-grow: 1;
+                }
+
+                .menu-item .details h3 {
+                    margin: 0;
+                    font-size: 18px;
+                }
+
+                .menu-item .details p {
+                    margin: 5px 0;
+                    color: #ffffff;
+                }
+            </style>
+        </head>
+
+        <body>
+
+            <div class="menu-container">
+                <h2>Our Menu</h2>
+                <div class="menu-item">
+                    <img src="th.png">
+
+                    <div class="details">
+                        <h3>Spaghetti Carbonara</h3>
+                        <p>A classic Italian pasta dish with creamy sauce and crispy pancetta.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="salmon.png" alt="Dish 2">
+                    <div class="details">
+                        <h3>Grilled Salmon</h3>
+                        <p>Freshly grilled salmon served with a lemon butter sauce.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="Caesar Salad.png" alt="Dish 3">
+                    <div class="details">
+                        <h3>Caesar Salad</h3>
+                        <p>Crisp romaine lettuce, croutons, and parmesan tossed in Caesar dressing.</p>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <img src="OIF.png" alt="Dish 4">
+                    <div class="details">
+                        <h3>Margherita Pizza</h3>
+                        <p>Traditional pizza with fresh mozzarella, basil, and tomato sauce.</p>
+                    </div>
+                </div>    
+                <div class="menu-item">
+                    <img src="Kottu.jpg" alt="Dish 4">
+                    <div class="details">
+                        <h3>Spice Kottu</h3>
+                        <p>Traditional Kottu with fresh Spices, Meats, and Other Condiments.</p>
+                    </div>   
+                </div>
+            </div>
+
+        </body>
+
+        </html>
+    </main>
+</div>
+<div id="foods" class="section">
+    <h2>Foods</h2>
+    <p>Explore our wide range of tasty dishes, including starters, main courses, and more!</p>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant Menu</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                padding: 20px;
+                background-color: #ffffff;
+            }
+
+            .menu-container {
+                max-width: 800px;
+                margin: auto;
+                background: #665555;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 6px rgb(253, 253, 253);
+            }
+
+            .menu-container h2 {
+                text-align: center;
+                margin-bottom: 20px;
+            }
+
+            .menu-item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                border-bottom: 1px solid #ddd;
+                padding-bottom: 10px;
+            }
+
+            .menu-item img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 8px;
+                margin-right: 20px;
+            }
+
+            .menu-item .details {
+                flex-grow: 1;
+            }
+
+            .menu-item .details h3 {
+                margin: 0;
+                font-size: 18px;
+            }
+
+            .menu-item .details p {
+                margin: 5px 0;
+                color: #ffffff;
+            }
+        </style>
+    </head>  
+    </div>
+    <div id="beverages" class="section">
+        <h2>Beverages</h2>
+        <p>From cocktails to coffee, we have drinks for every occasion.</p>
+        <div class="menu-item">
+            <img src="Choco.jpg" alt="beverage 01">
+            <div class="details">
+                <h3>Chocolate Milk Shake</h3>
+                <p>Milk Shake with Choco and Choco bars.</p>
+            </div>             
+            <div class="menu-item">
+                <img src="mojito.jpg" alt="beverage 02">
+                <div class="details">
+                    <h3>Mojito</h3>
+                    <p>Mojito with delicious & freshly.</p>
+                </div>   
+    </div>
+    <div id="desserts" class="section">
+        <h2>Desserts</h2>
+        <p>Delight in our sweet and savory dessert options.</p>
+    </div>
+    <div id="contact" class="section">
+        <h2>Contact Us</h2>
+        <p>Reach out to us for reservations or inquiries.</p>
+        <!DOCTYPE html>
+        <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Submit Your Idea</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    margin: 20px;
+                    padding: 20px;
+                    background-color: #a79292;
+                }
+
+                .form-container {
+                    max-width: 500px;
+                    margin: auto;
+                    background: #fff;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 6px rgba(255, 253, 253, 0.1);
+                }
+
+                .form-container h2 {
+                    text-align: center;
+                }
+
+                .form-group {
+                    margin-bottom: 15px;
+                }
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+
+                input,
+                textarea {
+                    width: 100%;
+                    padding: 10px;
+                    border: 3px solid #0a0a0a;
+                    border-radius: 4px;
+                   
+                }
+
+                button {
+                    width: 100%;
+                    padding: 10px;
+                    background-color: #1fdad0;
+                    color: white;
+                    border: none;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+
+                button:hover {
+                    background-color: #099185;
+                }
+            </style>
+        </head>
+
+        <body>
+
+            <div class="form-container">
+                <h2>Submit Your Idea</h2>
+                <form action="submit_idea.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="idea">Your Idea:</label>
+                        <textarea id="idea" name="idea" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+
+        </body>
+
+        </html>
+
+    </div>
+    </main>
+
+    <script>
+        function showSection(sectionId) {
+            // Hide all sections
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+            // Show the selected section
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
